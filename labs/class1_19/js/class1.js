@@ -8,7 +8,7 @@ function draw(){
     circle(mouseX, mouseY, r);
    
     //"r" is the radius, the circle cannot be larger than 50, so r must be less than or equal to 25. 
-    
+    //hi
     if(mouseIsPressed) {
         //+1 radius 
         r++;  
