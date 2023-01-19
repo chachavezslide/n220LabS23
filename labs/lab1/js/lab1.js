@@ -34,6 +34,8 @@ function draw() {
   vertex(900,480);
   vertex(500,180);
   endShape(CLOSE);
+
+  rect(30, 30, 30, 30);
 }
   console.log(x < 20);
   //Check and see if the console log has to follow ever chunk of code or if it should go to the end.
