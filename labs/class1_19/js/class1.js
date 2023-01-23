@@ -3,7 +3,7 @@ function setup(){
     createCanvas( 1080, 1920) ;
 }
 function draw(){
-
+    rect(0,0,100,100);
     fill(150, 40, 20);
     circle(mouseX, mouseY, r);
    
