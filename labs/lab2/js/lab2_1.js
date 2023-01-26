@@ -8,14 +8,14 @@
 //every draw call of P5. This number should start at zero, and increase by one every frame.
 
 
-//function setup() {
-    //createCanvas(400, 800);
-   // print("The Draw Counter!");
-//}
-//function draw() {
-   // print(frameCount);
-   // background (255, 255, 255);
-   // fill(0,0,0);
-   // ellipse (mouseX, mouseY, 30);
-//}
-//console.log
+function setup() {
+    createCanvas(400, 800);
+   print("The Draw Counter!");
+}
+function draw() {
+   print(frameCount);
+   background (255, 255, 255);
+   fill(0,0,0);
+   ellipse (mouseX, mouseY, 30);
+}
+console.log

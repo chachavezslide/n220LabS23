@@ -6,8 +6,8 @@
 
 var radius = 40;
 var x = radius;
-var speed = 5;
-var direction = 1;
+var xSpeed = 2.5;
+var ySpeed = 2.5;
 var y = radius + radius;
 
 
@@ -17,24 +17,38 @@ createCanvas(800, 600);
 ellipseMode(RADIUS);
 }
 function draw(){
-    background(0);
-    x += speed * direction; 
-    y += speed * direction;
-    if ((x > width-radius) || (x < radius)){
-        direction = -direction;
-     } else { 
-        direction = 1;
-     }
+   background(0);
+   fill( 200, 150, 20);
+   ellipse(x, y , 20, 20, 10 );
+    x += xSpeed; 
+    y += ySpeed;
+    if (x > width-radius || x < radius){
+        xSpeed = xSpeed * -1;
+     } 
+     
+     //else { 
+        //direction = 1;
+    // }
 
-    if ((y > height-radius) || (y < radius)){
-        direction = -direction;
+    if (y > height-radius || y < radius){
+       ySpeed = ySpeed * -1;
    }
-    if ( direction == 1){
-        ellipse(x, y , 20, 20 );
-    } else { 
-        ellipse(x, y , 20, 20 );
-    }
+   //if (ySpeed = ySpeed * -1){
+   // fill( 25, 25, 25);
+   //}
+   //if ( direction == 1){
+       // ellipse(x, y , 20, 20 );
+  // } else { 
+       
+    //}
     //find out how to change directions so it bounces at an angle rather tha back and forth.
 //Not the desired result, though it technically bounces
 }
 //console.log( )
+
+//note
+// traveling SE means increase in x coordinate and y coordinate
+// To make it travel N means that y coord must be decreasing
+//should there be two directions?
+//if ((y > height-radius) || (y < radius)) {
+// "multiply yDirection by -1, xdirection stays +1"

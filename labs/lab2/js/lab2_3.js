@@ -7,23 +7,23 @@
 //is on the left side of the canvas, draw the circle in blue.
 
 
-//var r=1;
+var r=1;
 
-//function setup(){
-//createCanvas(400, 300);
-//}
-//function draw(){
-//    background(0,0,0);
- //   if( mouseX < 200){
- //       fill(0,0,255);
- //   } else { fill(255, 0, 0);}
-  //  circle( mouseX, mouseY, r);
- //    if(mouseIsPressed){ 
- //       (r++)
- //    } else {
- //       (r--)
- //    }
-//     if( r < 10){
- //       r = 10
-//     }
-//}
+function setup(){
+createCanvas(400, 300);
+}
+function draw(){
+    background(0,0,0);
+    if( mouseX < 200){
+        fill(0,0,255);
+    } else { fill(255, 0, 0);}
+    circle( mouseX, mouseY, r);
+   if(mouseIsPressed){ 
+        (r++)
+     } else {
+        (r--)
+    }
+     if( r < 10){
+       r = 10
+    }
+}
