@@ -115,18 +115,26 @@
 // which we will learn more about next week)
 
 //-----------------------------------------------------------------
+
 //--F3 Polar Points--//
 
 //function draw(){
 //background()
+//circle() 
 //polarPoint
 //
 //end result should look like a ring of circles
 //}
 
+//this below should be able to create the 
+//two lines of values that the circles would be drawn along
+
 //function polarPoint(r){
         //variables
         //x
         //y
-    //return
+    
+        // sin and cos. insert some math chicanery here.
+    
+    //return // returns function back to the top.
 //}
