@@ -40,20 +40,63 @@
 //---------------------------------------------------------------//
 //-- F1 Drawing Drawer--//
 
-        //variables
-//x
-//y
-
+        //variables n objects
+//var 
+var drawRocket;
+var drawCircle;
         //functions
-//function setup
-    //canvas (600,900) maybe?
-    //background();
+function setup(){
+    createCanvas (900,900);
+    background(10,10,10);
     //add arguments 
-        //set following draw function to mouseX mouseY
-            //drawComp    //rename drawComp based on resulting composition
-//
-//function draw
-    // background()
+       
+}
+function draw(){
+     //set following draw function to mouseX mouseY
+     //---------------------------FUNCTION 1 - DRAWING DRAWER-------------------//
+     background(10,10,10);
+     fill(170, 200, 150);
+     drawRocket(mouseX, mouseY);  //rename drawComp based on resulting composition
+        
+     
+    //drawCircle(500, 500);        
+
+
+     //---------------------------FUNCTION 3 - POLAR POINT-------------------//
+
+}
+
+function drawRocket(x,y){
+    translate(x, y); // translate composition to equal given x and y values.
+    
+    beginShape(); //stablizers 
+    vertex(-25,80);
+    vertex(25,80);
+    vertex(0,60);
+    endShape(CLOSE);
+
+    rect(-10,20,20,60); //body
+
+    beginShape(); //t0p cone
+    vertex(0,0);
+    vertex(-17,40);
+    vertex(17,40);
+    endShape(CLOSE);
+
+    fill(250,250,250);
+    ellipse(0,50,10,10); //window
+}
+    
+
+
+
+//function drawCircle(){
+    //colorVaribleArgumentName.setRed(0);
+    //fill(170, 200, 150);
+    //circle( 10, 10, 300, 300);
+    //let noRed = removeRed( color(170, 200, 150) ); 
+//}
+
 
 
 //--------------------------------------------------------//
@@ -69,6 +112,17 @@
 
 //fill(noRed);
 
+//if red, then not red
+
+//drawCircle(){
+// colorVaribleArgumentName.setRed(0);
+// fill(170, 200, 150);
+// let noRed = removeRed( color(170, 200, 150) );
+//
+//
+//}
+
+
 //draw circle
 
 //------------------------------------------------------------------//
@@ -77,19 +131,7 @@
 // Should I set this assignment up as 3 pages as with before? 
 //That or create a new block of code for each
 
-    //variables
-    //??
-
-//function draw(){
-//background()
-//fill(170, 200, 150);
-//circle() 
-
-//if red, then not red
-
-//let noRed = removeRed(color(170,200,150));
-
-//}
+    
 
 //--------------------------------------------------------------//
 //--function 3 Instructions--//
