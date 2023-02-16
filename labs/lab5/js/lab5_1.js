@@ -16,22 +16,32 @@
 //code plan 1//
 
 //--js--//
+var width = 100;
+var height = 100;
 
 
+let squareDiv = document.getElementById("square");
+
+//squareDiv.innerHTML = "squareHere?";
+
+squareDiv.style.backgroundColor = "green"; //color
+squareDiv.style.width = width + "px"; //width and units
+squareDiv.style.height= height + "px"; //height and units
+
+function growSquare(){
+    width = width *1.1; //increase widht
+    height = height *1.1; // increase height
+    
+    squareDiv.style.width = width +"px"; //store changes
+    squareDiv.style.height = height +"px"; //store changes 
+    //insert return or way that it repeats every time clicked
+    
+   console.log(squareDiv); //log rolling
+}
+
+document.body.appendChild(squareDiv);
 //let height = 100;
 //let width = 100;
-
-function setup(){
-//createCanvas (1000, 1000);
-}
-function draw(){
-    //onClick 
-    //multiply height by 1.1
-    //multiply width by 1.1
-    //return the code
-}
-// html //
-
 
 //<style> 
 //size{
@@ -39,41 +49,3 @@ function draw(){
 //}
 //</style>
 //<div></div> 
-
-
-//-------------------------------------------2: McDiv'ns...........................................//
-
-//Put a div on the page. When the div is clicked, append the text "mc" to whatever is in its innerHTML.
-//After 3 clicks, the div will show "divdivdiv"
-
-// html //
-//<style> set the style for divs
-//set it to onclick
-// if onclick is <= 3 then mc
-//if mc > 3 then "divdivdiv"
-// <div></div>
-
-//---------------------------------------3: Over and Out------------------------------------------//
-
-//Write the markup and JavaScript to place a square div on the page (100px x 100px), 
-//with a blue background. Using onmouseover and onmouseout (instead of "onclick"), 
-//change the div's color to black when the mouse is over the div, and back to blue when the mouse leaves.
-
-
-//plan//
-// create div
-// place the div on the screen
-
-//div default color set to blue
-
-//onmouseover, style the div to be black
-//onmouseout, set style of div back the blue
-
-//------------------------------------4: Personal Composition-------------------------------////
-
-//Create a composition that, at minimum:
-//1. Changes the css property of an asset on a mouse interaction (mouse over, mouse out, click)
-//2. Modifies and changes the inner html of one element
-//3. Accesses and modifies a variable outside of a local, function scope
-
- //is this even posssible or would this conflict with the other styleSheet.css?
