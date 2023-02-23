@@ -44,74 +44,25 @@ funciton counterWrite(){ // how to get this to trigger imediately in the html
 }
 document.body.appendChild(counter5k);
 
+*/
 
--------------------------------------------------------------------------
+let counter5k = document.getElementById("counter");
 
-2 - Beep Bop
+counter5k.style.width = 200 +"px"; 
+counter5k.style.height = 200 +"px";  // div size
+counter5k.style.backgroundColor = "#fffff0" // div color 
 
-Write a loop that runs 25 times and writes the iterand 
-(current iteration of the loop) out onto the page inside of a div element.
+//const counterArray = [1000, 2000, 3000, 4000, 5000]; 
 
-However,
 
-When the iterand is divisible by 3, write the word "beep" instead
-When the iterand is divisible by 5, write the word "bop" instead
-When the iterand is divisible by 3 AND 5, write "beepbop" instead
+let i = 0; //iterands 
 
-//------planing----//
-/* 
-//html: write a div lol, and link it to the script too.
-
-//js
-
-let beeper = document.getElementById("beep");
-
-let i = 0;
-while ( i < 25){
-    i++;
-    console.log(i);
+while(i < 5){
+    //console.log(i);
+    i++; //add i each count
+    counter5k.innerHTML += i*1000 + "<br />" //this is to make it all thousands, hence the "k"
+    console.log(i * 1000); //tester 
 }
-
-//create an if function that will write beep to the document when i is divisible by 3
-//create an if function that will write beep to the document when i is divisible by 5
-//create an if function that will write beep to the document when i is divisible by 3 and 5
-
-//maybe create an arry of all numbers we know are divisible according to the parameters? I bet there is a function to use but idk
-*/
-
-/*
-
-----------------------------------------------------------------------------------------------------------------------
-
-3 - Runner Up
-
-Create an array with 3 "best times" (numbers). Write the array so the times in order, from lowest to highest.
-
-Then, write the line of code that displays the runner-up times (second and third place) in two different divs.
-
- //------------------plan-----------------//
-
- 3 best times? like my favorite times of day? 
-
- //create an array of ["12:00", "15:00", "17:00"] These values are 0,1,2
-
---------------------------------------------------------------------------------------------------------------
-
-4 - Favorray
-
-Create a string array. List at least five of your favorite things in that array.
-
-Then, write a loop that writes to a div element each of them, with the string ", is one of my favorite things." after the thing.
- For instance, one line in the div might say, "Pizza, is one of my favorite things."
-
-//create an array of 5 favorite things ["Calvin Fletchers","Amberson","Parlor","Leviathan","Tinker"] 
-
-// maybe edit the string to say "places" rather than things, given the context??
-
-//while i<5, write iterand string
-//"iterand string"+ "is one of my favorite places"
-
-
-
-*/
-
+  
+//console.log();
+//document.body.appendChild(counter5k);
