@@ -42,3 +42,84 @@ Tie the divs to the js with the DOM.
 
 
 */
+let navItem = document.getElementsByClassName("nav");
+let logColors = document.getElementById("colorLog");
+
+//base UI
+logColors.style.height = 40 + "px";
+logColors.style.width = 300 + "px";
+
+
+for(let i=0; i <6; i++){
+  navItem[i].style.height = 20 +"px";
+  navItem[i].style.width = 300 + "px";
+  navItem[i].style.backgroundColor = "#fff0f0";
+  navItem[i].style.fontWeight = "normal";
+  
+  console.log()
+};
+//highlighter
+//orange
+function highlightDiv0(orange){
+  for(let i=0; i <6; i++){
+    navItem[i].style.fontWeight = "normal";
+    navItem[i].style.backgroundColor = "#fff0f0";
+navItem[0].style.backgroundColor ="#FBCEB1";
+navItem[0].style.fontWeight = "bold"; 
+logColors.innerHTML = "orange"  //write the name in the counter
+  }
+}
+//cyan
+function highlightDiv1(Cyan){
+  for(let i=0; i <6; i++){
+    navItem[i].style.fontWeight = "normal";
+    navItem[i].style.backgroundColor = "#fff0f0";
+navItem[1].style.backgroundColor ="#e0ffff";
+navItem[1].style.fontWeight = "bold";
+logColors.innerHTML = "cyan"  //write the name in the counter
+  }
+}
+//teal
+function highlightDiv2(Teal){
+  for(let i=0; i <6; i++){
+    navItem[i].style.fontWeight = "normal";
+    navItem[i].style.backgroundColor = "#fff0f0";
+navItem[2].style.backgroundColor ="#008080";
+navItem[2].style.fontWeight = "bold";
+logColors.innerHTML = "teal" 
+  }
+}
+//magenta
+function highlightDiv3(Magenta){
+  for(let i=0; i <6; i++){
+    navItem[i].style.fontWeight = "normal";
+    navItem[i].style.backgroundColor = "#fff0f0";
+navItem[3].style.backgroundColor ="#FF00ff";
+navItem[3].style.fontWeight = "bold";
+logColors.innerHTML = "magenta" 
+  }
+}
+//lavender
+function highlightDiv4(Lavender){
+  for(let i=0; i <6; i++){
+    navItem[i].style.fontWeight = "normal";
+    navItem[i].style.backgroundColor = "#fff0f0";
+navItem[4].style.backgroundColor ="#e696FA";
+navItem[4].style.fontWeight = "bold";
+logColors.innerHTML = "lavender" 
+  }
+ }
+ //ultramarine
+function highlightDiv5(Ultramarine){
+  for(let i=0; i <6; i++){
+    navItem[i].style.fontWeight = "normal";
+    navItem[i].style.backgroundColor = "#fff0f0";
+navItem[5].style.backgroundColor ="#4166f5";
+navItem[5].style.fontWeight = "bold";
+logColors.innerHTML = "ultramarine" 
+}
+console.log()
+
+}
+
+  console.log()

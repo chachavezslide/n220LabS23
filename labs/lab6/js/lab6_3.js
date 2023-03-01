@@ -24,7 +24,7 @@ bestTime.style.backgroundColor="yellow";
 
 console.log(timeArr[0] +"first!");
 
-bestTime.innerHTML =timeArr[0] +"First!"
+bestTime.innerHTML =timeArr[0] +"First!" //first time
 
 //------------------ second div---------//
 
@@ -34,9 +34,9 @@ secondPlace.style.backgroundColor="grey";
 
 console.log(timeArr[1]+ "second");
 
-secondPlaceinnerHTML +=timeArr[1] +"second" +"<br />"
+secondPlace.innerHTML +=timeArr[1] +"second" +"<br />" //second place time
 
-// [-----------------third div------------//
+// -----------------third div------------//
 
 let thirdPlace = document.getElementById("third");
 
@@ -45,7 +45,7 @@ thirdPlace.style.backgroundColor="orange";
 
 console.log(timeArr[2] + "third");
 
-thirdPlace.innerHTML +=timeArr[2] +"third :("
+thirdPlace.innerHTML +=timeArr[2] +"third :(" //third place time
 
 //create an array of ["12:00", "15:00", "17:00"] These values are 0,1,2 
 

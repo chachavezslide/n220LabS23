@@ -51,3 +51,84 @@ P0 C1, P1 C2, P2 C0 = loss = -1
 
 
 */
+let score = document.getElementById("scoreDiv");
+let playerRock = document.getElementById("R");
+let playerPaper = document.getElementById("P");
+let playerScissor = document.getElementById("S");
+let playerGuard= document.getElementById("G");
+
+let playerScore = 0//starting at 0 points
+
+let rpsgArr= ["rock","paper","scissor","guard"]
+
+score.style.height = 40 +"px";
+score.style.width = 200 + "px";
+score.style.backgroundColor = "gray"
+//score.style.strokeWeight = "2"
+
+score.innerHTML= playerScore
+
+
+function rival(userMove) {
+    let compPlay = Math.floor(Math.random()*3);
+    compMove= rpsgArr[compPlay];
+    console.log(compPlay)
+    console.log(compMove)
+
+    //tie conditions
+    if(userMove =='rock'&& compMove == 'rock'){
+        score.innerHTML= playerScore + 0//tie
+        console.log(score + "tie")
+    }
+    if(userMove =='paper'&& compMove == 'paper'){
+        score.innerHTML= playerScore + 0//tie
+        console.log(score + "tie")
+    }
+    if(userMove =='scissor'&& compMove == 'scissor'){
+       score.innerHTML= playerScore + 0//tie
+        console.log(score + "tie")
+    }
+
+    //document.body.appendChild(score);
+
+    //win conditions
+    if(userMove =='rock'&& compMove == 'scissor'){
+        score.innerHTML= playerScore+=1; //win
+        console.log(score + "win")
+    }
+    if(userMove =='paper'&& compMove == 'rock'){
+        score.innerHTML= playerScore+=1; //win
+        console.log(score + "win")
+    }if(userMove =='scissor'&& compMove == 'paper'){
+        score.innerHTML= playerScore+=1; //win
+        console.log(score + "win")
+    }
+
+    //document.body.appendChild(score);
+//Jacobs note: score seeming to be working in reverse?
+    //loss conditions 
+    //    |  ||
+    //   ||  |/
+   
+    if(userMove =='rock'&& compMove == 'paper'){
+        score.innerHTML= playerScore-=1//loss
+        console.log(score + "loss")
+    }
+    if(userMove =='paper'&& compMove == 'scissor'){
+        score.innerHTML= playerScore-=1 //loss
+        console.log(score + "loss")
+    }
+    if(userMove =='scissor'&& compMove == 'rock'){
+        score.innerHTML= playerScore -=1 //loss
+        console.log(score + "loss")
+    } 
+    //loss condition guard edition 
+    if(userMove == 'guard'){
+        score.innerHTML= playerScore -= 0.5 //guard loss
+        console.log(playerScore + " guard loss")
+    }
+}
+//document.body.appendChild(score);
+
+
+console.log()
