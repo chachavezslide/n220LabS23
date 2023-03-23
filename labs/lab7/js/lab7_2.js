@@ -24,30 +24,58 @@ working on your programming.
 
 Complete three of the below:
 
+
+
+
+ /* 3) Password Protected
+
+Create an application with two input fields and one button.
+
+When the button is clicked, verify the user has written these (exact) strings in the first and second field:
+
+First field should be  "Username"
+Second field should be  "Password"
+If the two fields match, update a DIV on the page with the text "Success" or else "Wrong information".
+
+For this assignment: use only one if statement to to the check.
+
+Remember you'll need to use the double-equals (==) to check for equality, 
+and the double-ampersand to check if two things are true.
+
+if( (oneThingIsTrue) && (anotherThingIsTrue) ) {
+
+ 
+
+}
 */
-
-/* 2) Tip calculator
-
- Make a page with one input and one button (Seeing a trend?). When the button is clicked 
- (assuming the value typed into the input is numerical), calculate both the tip and the full value of the bill to be paid.
-  Output both to the console, formatted as such:
-
- "Tip: $X. Total: $X" */
-
 //Plans
 //html//
-    //<input type= number id="numField">
-    //<button  onclick="tipCalc()">Calculate Tip</button>
-
+    //<input id="username"> Username
+    //<input id="password"> Password
+    //<button onClick="confirmID()">login</button>
 //js//
-    let bill = document.getElementById("numField");
-    
-    function tipCalc(){
-        let billSum = Number(bill.value);  //limit bill to # values.
-        for(let i=0; i < billSum; i++){
-           let tip= billSum* 0.15; //tip percent 15%
-           let total = billSum+tip; //add 15% of bill to bill and print out the sum
-            console.log("tip:$"+tip);
-            console.log("total:$"+total);
-            }}
+    //connect the button to a function
+        //said function include an if function
+        //if username= "username" && password = "password", then append child in div "success!"
+        //else "wrong information"
 
+let user = document.getElementById("userField");
+let pass = document.getElementById("passField");
+let outputCheck =document.getElementById("passField");
+
+//output.innerHTML ="Success"
+function loginCheck(){
+
+let usernameInput = user.value; //value open to numbers and strings?
+let passwordInput = pass.value;
+
+if((usernameInput=="Username") && (passwordInput=="Password")){ 
+    output.innerHTML ="Success";
+    console.log("Success");
+} else{
+    output.innerHTML ="Incorrect Information";
+   console.log("Incorrect Information");
+}
+// checks the input for the username and password fields with the strings in the code.
+   
+}
