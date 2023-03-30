@@ -23,3 +23,28 @@ if ( i % 7 == 0){// true
 x="Divisible by 7"} else {//false
 x="Not divisible by 7"}
 */
+
+let userNumber = document.getElementById("numField")
+
+function divideBySeven(i){
+
+  let result = i % 7; //divides by seven, produces remainder, 
+  
+  if(result == 0){ // if remainder is 0, then it is divisible by 7
+     return true;
+    } 
+
+  return false;
+
+  
+}
+
+
+ function isDivisible(){
+    let i = Number(userNumber.value) //limit only to numbers 
+   
+  output.innerHTML = divideBySeven(i) //when function runs at the call of the button click, it will run divideBySeven(i) every time the button is clicked 
+  
+    console.log(divideBySeven(i))
+
+ }

@@ -29,3 +29,42 @@ set another function, maybe nest it in the other. function click(){
    return
 }
 */
+//let 
+
+/* function divideBySeven(i){
+ // 
+  let result = i % 7;
+  
+  if(result == 0){
+     return true;
+    } 
+
+  return false;
+
+ // if(result==0){console.log(true), output.innerHTML = "True"} else {console.log(false), output.innerHTML = "False"};
+  
+}
+//console.log(divideBySeven(14)); 
+
+ function isDivisible(){
+    let i = Number(userNumber.value)
+   
+  output.innerHTML = divideBySeven(i)
+  
+    console.log(divideBySeven(i))
+
+ }*/
+ 
+function randomRoll(){ 
+let roll = Math.floor(Math.random()*10); //rounds the decimal after multiplying by ten for a whole number 
+
+console.log(roll)
+return roll; //run it back turbo
+
+}
+
+
+function randomizer(){
+
+   output.innerHTML = randomRoll() // display random number 
+}
