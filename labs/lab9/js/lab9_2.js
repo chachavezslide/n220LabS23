@@ -41,3 +41,53 @@ if(arrayName[i]==findKeyword){console.log("found keyword")}  should be used to c
 'everytime it is true, add one. if count is > 0 then print out "found"
 
 */
+
+//let stringInput= document.getElementById("userString")
+
+function spliter() {
+    let userText = document.getElementById("userString").value;
+    let textArray = userText.split(" ");
+    console.log(textArray)
+
+
+    let tally = 0
+
+    for(let i=0; i<textArray.length; i++){
+        if(textArray[i]== "clear" || textArray[i]=="water" ||  textArray[i]=="tire" ){
+        tally ++
+            console.log(tally);
+        }
+    }return tally;
+
+
+}
+
+
+
+function cussCatcher(){
+    
+    res.innerHTML=spliter() +"Words found";
+}
+
+
+//graveyard
+
+/*while(i < textArray.length) { 
+    let wordSelected = textArray[i]
+    i++;
+    console.log(wordSelected)
+
+//if(i>textArray.length){break;}
+}
+
+console.log(element)*/
+
+
+   // let findClear = "clear";
+    //let findWater = "water";
+    //let findTires = "tires";
+//function findClear(){} while(let i =0; i<textArray.length; i++) {if(i>textArray.length){break;}}
+
+//bad words ["clear", "water", "tires"]
+
+//let badWords = ["clear","water","tires"];
