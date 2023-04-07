@@ -48,10 +48,17 @@ function divProcess(){
     for( let i= 0; i < objects.length; i++){
        
     newDiv.style.backgroundColor = objects[i].color;
+    console.log(objects[i].color)
     newDiv.style.width= objects[i].width;
+    console.log(objects[i].width)
     newDiv.style.height=objects[i].height;
-    tester.appendChild(newDiv);
+    console.log(objects[i].height)
+    
+    newDiv.innerHTML =objects[i].width;
+    newDiv.innerHTML =objects[i].height;
+    newDiv.innerHTML =objects[i].color;
     }   
+    tester.appendChild(newDiv)
     console.log(newDiv)
 } //return newDiv;
 
