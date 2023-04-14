@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+body {
+  color: #333;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+#wheel {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  display: relative;
+}
+
+.option {
+  transform-origin: left center;
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  width: 100px;
+  height: 100px;
+}
+
+.next {
+  grid-column: 3 / 3;
+  
+}
+    
+</style>
+
+<body>
+    
+    <div id="wrapper"> 
+        <div id="wheel"></div>
+        <div class="harmonies next">
+          <!-- add buttons here -->
+          Buttons
+        </br>
+          <button> Complementary</button> <button>Split Complementary </button> <button> Analogous</button>
+        </div>
+        <div class="harmonyDisplay next">
+          <!-- display the selected harmony here -->
+          Harmony Display
+        </div>
+      </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -46,18 +46,20 @@ if(arrayName[i]==findKeyword){console.log("found keyword")}  should be used to c
 
 function spliter() {
     let userText = document.getElementById("userString").value;
-    let textArray = userText.split(" ");
+    let textArray = userText.split(" "); // splits the string into indvidual words
     console.log(textArray)
 
 
     let tally = 0
 
     for(let i=0; i<textArray.length; i++){
-        if(textArray[i]== "clear" || textArray[i]=="water" ||  textArray[i]=="tire" ){
-        tally ++
+        // checks every itierand to see if any of the words are present.
+        if(textArray[i]== "clear" || textArray[i]=="water" ||  textArray[i]=="tire" ){ 
+            
+        tally ++ //add 1 to tally per instance of word
             console.log(tally);
         }
-    }return tally;
+    }return tally; //return and repeat until all words have been checked. Previous versions of this block would tend to stop at 1 for the count
 
 
 }
@@ -66,7 +68,7 @@ function spliter() {
 
 function cussCatcher(){
     
-    res.innerHTML=spliter() +"Words found";
+    res.innerHTML=spliter() +" Words found";
 }
 
 

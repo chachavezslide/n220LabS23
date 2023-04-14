@@ -23,3 +23,39 @@ The result, after clicking on the first and third, should look something like th
 //div 3 to #0000ff
 
 // change each class atttribute when div clicked.
+
+//lets go
+let container = document.getElementById("container")
+container.style.width = 800 +"px"
+
+
+let divOne = document.getElementById("div1"); 
+  divOne.addEventListener("click",changeColor);
+
+  divOne.style.backgroundColor="gray"
+  divOne.style.width= 200 + "px"
+  divOne.style.height= 200 + "px"
+ 
+ let divTwo = document.getElementById("div2"); 
+  divTwo.addEventListener("click",changeColor);
+  
+  divTwo.style.backgroundColor="gray"
+  divTwo.style.width= 200 + "px"
+  divTwo.style.height= 200 + "px"
+
+ let divThree = document.getElementById("div3"); 
+  divThree.addEventListener("click",changeColor);
+
+  divThree.style.backgroundColor="gray"
+  divThree.style.width= 200 + "px"
+  divThree.style.height= 200 + "px"
+
+
+
+ function changeColor(event){
+  console.log("Test")
+let response =event.target.getAttribute("data-response")
+
+  event.target.style.backgroundColor = response;
+ }
+ //event.target.style.backgroundColor= response
