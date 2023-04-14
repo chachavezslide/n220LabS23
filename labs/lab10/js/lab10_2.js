@@ -35,7 +35,9 @@ let colorDiv = document.getElementById("colorDisplay");
     colorDiv.style.width = 500 + "px";
     colorDiv.style.height = 100 + "px";
 
-let rVal = 0
+let rVal = 0;
+let gVal = 0;
+let bVal = 0;
 
 let red1 =document.getElementById("red1");
 red1.addEventListener("click",addRed)
@@ -57,5 +59,6 @@ let blue5 =document.getElementById("blue5");
 let blue10 =document.getElementById("blue10");
 
 function addRed(event){
-    console.log(Number(rVal + event.target.getAttribute("data-response")))
+    console.log(Number(event.target.getAttribute("data-response")))
+    
 }
