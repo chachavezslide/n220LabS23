@@ -58,7 +58,7 @@ let blue5 =document.getElementById("blue5");
 
 let blue10 =document.getElementById("blue10");
 
-function addRed(event){
+function addRed1(event){
     console.log(Number(event.target.getAttribute("data-response")))
     
 }

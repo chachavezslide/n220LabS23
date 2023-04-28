@@ -25,37 +25,37 @@ The result, after clicking on the first and third, should look something like th
 // change each class atttribute when div clicked.
 
 //lets go
-let container = document.getElementById("container")
+let container = document.getElementById("container") //holds all the divs
 container.style.width = 800 +"px"
 
 
 let divOne = document.getElementById("div1"); 
-  divOne.addEventListener("click",changeColor);
+  divOne.addEventListener("click",changeColor); //red
 
   divOne.style.backgroundColor="gray"
   divOne.style.width= 200 + "px"
   divOne.style.height= 200 + "px"
  
  let divTwo = document.getElementById("div2"); 
-  divTwo.addEventListener("click",changeColor);
+  divTwo.addEventListener("click",changeColor); //blue
   
   divTwo.style.backgroundColor="gray"
   divTwo.style.width= 200 + "px"
   divTwo.style.height= 200 + "px"
 
  let divThree = document.getElementById("div3"); 
-  divThree.addEventListener("click",changeColor);
+  divThree.addEventListener("click",changeColor); //green
 
   divThree.style.backgroundColor="gray"
   divThree.style.width= 200 + "px"
   divThree.style.height= 200 + "px"
 
-
+//function here 
 
  function changeColor(event){
   console.log("Test")
 let response =event.target.getAttribute("data-response")
 
-  event.target.style.backgroundColor = response;
+  event.target.style.backgroundColor = response; //checks for data response in html
  }
  //event.target.style.backgroundColor= response

@@ -34,7 +34,7 @@ for(let i =0; i<3; i++){ // runs the array to produce buttons for questions
     let newCard = document.createElement("button");
     newCard.innerHTML= states[i];
     console.log(states[i])
-    container.appendChild(newCard)
+    container.appendChild(newCard) //add new button.
     newCard.dataset.cardAns = capitals[i]; //ties the capital to the respective state
     newCard.addEventListener("click", respondCapital) //event listener
 }
