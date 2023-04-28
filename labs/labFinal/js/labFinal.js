@@ -66,7 +66,7 @@ Use setTimeout to keep both face up cards visible for two seconds before hiding 
   // randomize the array 
 
 //------------Card memory
-let prevCard=""-1
+let prevCard=""
 //let currCard= document.querySelector("div") //does this even work??? idk what does it do? is this just arbitrary lmao?
 
   
@@ -90,8 +90,8 @@ let prevCard=""-1
 
 function cardFlip(event){
   let index = Number(event.target.dataset.index)
-  event.target.innerHTML=cardArr[index]
-  event.target.style.backgroundColor="#6fe392"
+ // event.target.innerHTML=cardArr[index]
+  //event.target.style.backgroundColor="#6fe392"
 
    // console.log(prevCard, event.target.dataset.index);
 
@@ -104,17 +104,22 @@ if(prevCard ==""){
   //prevCard = event.target;
   prevCard = event.target.dataset.index;
   console.log(prevCard)
-  console.log("clear card")
- 
-    setTimeout(function() {event.target.style.backgroundColor= "#c4f6ff"},2000)
-    setTimeout(function() {event.target.innerHTML=""-1},2000)
+  //onsole.log("clear card")
+
+  event.target.innerHTML=cardArr[index]
+  event.target.style.backgroundColor="#6fe392"
   
 } else {
+  if( cardArr[prevCard] != cardArr[event.target.dataset.index]){
+    setTimeout(function() {event.target.style.backgroundColor= "#c4f6ff"},2000)
+    setTimeout(function() {event.target.innerHTML=""},2000)
+    console.log("clear")
+  } else{
   if(cardArr[prevCard] == cardArr[event.target.dataset.index]){
    console.log("match")
     event.target.innerHTML=cardArr[index]
     event.target.style.backgroundColor="#6fe392"
-  }
+  }}
   
 
   prevCard="";
